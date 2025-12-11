@@ -11,7 +11,7 @@
     <view class="banner"> </view>
 
     <view class="container">
-      <view class="title">慧食搭子 记录美好生活</view>
+      <view class="title">吃动平衡 记录美好生活</view>
 
       <view class="input-box">
         <text>{{ phone.slice(0, 3) }}****{{ phone.slice(-4) }}</text>
@@ -35,11 +35,11 @@
       </view>
     </view>
 
-    <view class="kefu">
-      <text @click="callPhone">联系客服</text>
-      <text class="line">｜</text>
-      <text>客服电话：4009989759</text>
-    </view>
+    <!-- <view class="kefu"> -->
+    <!--   <text @click="callPhone">联系客服</text> -->
+    <!--   <text class="line">｜</text> -->
+    <!--   <text>客服电话：4009989759</text> -->
+    <!-- </view> -->
   </view>
 </template>
 
@@ -66,7 +66,7 @@ export default {
   onShareAppMessage() {
     return {
       title: 'AI饮食记录小程序',
-      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/food-diary-app/share-img.jpg',
+      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/chidongpingheng/share.jpg',
       path: '/pages/index/index',
     };
   },

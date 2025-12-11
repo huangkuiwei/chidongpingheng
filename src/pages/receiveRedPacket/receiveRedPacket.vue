@@ -7,7 +7,7 @@
           src="https://hnenjoy.oss-cn-shanghai.aliyuncs.com/scantool/static/assets/receiveRedPacket/logo.png"
         />
 
-        <text>慧食搭子发出的红包</text>
+        <text>吃动平衡发出的红包</text>
       </view>
 
       <view class="bottom">恭喜发财，大吉大利！</view>
@@ -56,7 +56,7 @@ export default {
   onShareAppMessage() {
     return {
       title: 'AI饮食记录小程序',
-      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/food-diary-app/share-img.jpg',
+      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/chidongpingheng/share.jpg',
       path: '/pages/index/index',
     };
   },

@@ -489,8 +489,8 @@ export default {
   data() {
     return {
       configInfo: {
-        appName: '慧食搭子',
-        companyName: '广州泰湖科技有限公司',
+        appName: '吃动平衡',
+        companyName: '长沙网领科技有限公司',
       },
     };
   },
@@ -498,7 +498,7 @@ export default {
   onShareAppMessage() {
     return {
       title: 'AI饮食记录小程序',
-      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/food-diary-app/share-img.jpg',
+      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/chidongpingheng/share.jpg',
       path: '/pages/index/index',
     };
   },

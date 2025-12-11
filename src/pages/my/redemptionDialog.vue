@@ -7,7 +7,7 @@
         <view class="options">
           <text @click="pasteCode">粘贴兑换码</text>
           <text class="line">|</text>
-          <button @click="openContact">获取兑换码</button>
+          <button open-type="contact">获取兑换码</button>
         </view>
       </view>
     </view>

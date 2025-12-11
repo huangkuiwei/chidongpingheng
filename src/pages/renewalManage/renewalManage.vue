@@ -36,7 +36,7 @@
           <view class="renew-info">
             <view>
               <text>续订产品</text>
-              <text>慧食搭子月会员</text>
+              <text>吃动平衡月会员</text>
             </view>
 
             <view>

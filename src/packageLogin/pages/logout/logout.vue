@@ -11,7 +11,7 @@
     <view class="banner"></view>
 
     <view class="tip">
-      *账户注销后，您将无法正常登录慧食搭子，并清空当前账号的所有数据，对应相关权益将同时全部作废
+      *账户注销后，您将无法正常登录吃动平衡，并清空当前账号的所有数据，对应相关权益将同时全部作废
     </view>
 
     <view class="container">
@@ -90,7 +90,7 @@ export default {
   onShareAppMessage() {
     return {
       title: 'AI饮食记录小程序',
-      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/food-diary-app/share-img.jpg',
+      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/chidongpingheng/share.jpg',
       path: '/pages/index/index',
     };
   },

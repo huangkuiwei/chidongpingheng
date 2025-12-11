@@ -108,7 +108,7 @@
       </view>
     </view>
 
-    <view class="know-btn" @click="$toSwitch('/pages/recode/recode')">我知道了</view>
+    <view v-if="analysisData" class="know-btn" @click="$toSwitch('/pages/recode/recode')">我知道了</view>
   </view>
 </template>
 
@@ -258,7 +258,7 @@ export default {
   onShareAppMessage() {
     return {
       title: 'AI饮食记录小程序',
-      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/food-diary-app/share-img.jpg',
+      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/chidongpingheng/share.jpg',
       path: '/pages/index/index',
     };
   },

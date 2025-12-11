@@ -82,7 +82,7 @@
       <view class="rule">
         <view class="rule-title">以下内容请您知悉</view>
 
-        <view>1.慧食搭子会员服务属于虚拟商品，是一项特殊服务，会员开通成功后概不退款，故请先试用满意后再开通</view>
+        <view>1.吃动平衡会员服务属于虚拟商品，是一项特殊服务，会员开通成功后概不退款，故请先试用满意后再开通</view>
         <view>2.会员价格会随着功能的完善会逐步涨价，现在开通最划算</view>
         <view>3.会员时长到期后不会自动续费</view>
         <view>4.有任何开通会员问题请联系客服咨询</view>
@@ -108,7 +108,7 @@
 
       <template v-else>
         <view class="buy-tip">由于相关规定，iOS版小程序暂不支持购买</view>
-        <button class="btn" @click="openContact">联系客服</button>
+        <button class="btn" open-type="contact">联系客服</button>
       </template>
     </view>
   </view>
@@ -162,7 +162,7 @@ export default {
   onShareAppMessage() {
     return {
       title: 'AI饮食记录小程序',
-      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/food-diary-app/share-img.jpg',
+      imageUrl: 'https://hnenjoy.oss-cn-shanghai.aliyuncs.com/chidongpingheng/share.jpg',
       path: '/pages/index/index',
     };
   },
@@ -172,7 +172,7 @@ export default {
       if (!this.isLogin) {
         uni.showModal({
           title: '提示',
-          content: '您当前未登录或登录已失效，为了您有更好的体验，慧食搭子需要您进行授权登录',
+          content: '您当前未登录或登录已失效，为了您有更好的体验，吃动平衡需要您进行授权登录',
           showCancel: true,
           success: (res) => {
             if (res.confirm) {
@@ -216,16 +216,16 @@ export default {
       $http.get('api/global/product/get').then((res) => {
         uni.hideLoading();
 
-        // 连续包月
-        res.data.splice(1, 0, {
-          id: 10003,
-          is_recommend: true,
-          original_price: 4200,
-          price: 2990,
-          product_des: '月会员',
-          product_name: '连续包月',
-          select_percentage: 0.1,
-        });
+        // TODO 连续包月
+        // res.data.splice(1, 0, {
+        //   id: 10003,
+        //   is_recommend: true,
+        //   original_price: 4200,
+        //   price: 2990,
+        //   product_des: '月会员',
+        //   product_name: '连续包月',
+        //   select_percentage: 0.1,
+        // });
 
         res.data.forEach((item) => {
           if (item.id === 10000) {
