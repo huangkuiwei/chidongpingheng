@@ -85,14 +85,14 @@
 
     <view class="nav-container">
       <view class="nav">
-        <view class="nav-item" @click="goFuliCenter">
-          <image
-            mode="widthFix"
-            src="https://hnenjoy.oss-cn-shanghai.aliyuncs.com/food-diary-app/recode/nav-icon07.png"
-          />
-          <text class="nav-title">福利中心</text>
-          <uni-icons color="#999999" type="right" size="14"></uni-icons>
-        </view>
+        <!-- <view class="nav-item" @click="goFuliCenter"> -->
+        <!--   <image -->
+        <!--     mode="widthFix" -->
+        <!--     src="https://hnenjoy.oss-cn-shanghai.aliyuncs.com/food-diary-app/recode/nav-icon07.png" -->
+        <!--   /> -->
+        <!--   <text class="nav-title">福利中心</text> -->
+        <!--   <uni-icons color="#999999" type="right" size="14"></uni-icons> -->
+        <!-- </view> -->
 
         <view class="nav-item" @click="goUserCenter">
           <image
