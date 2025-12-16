@@ -83,7 +83,7 @@
 </template>
 
 <script>
-import { mapActions, mapMutations, mapState } from 'vuex';
+import { mapActions, mapState } from 'vuex';
 import $http from '@/utils/http';
 
 export default {
@@ -115,7 +115,6 @@ export default {
   },
 
   methods: {
-    ...mapMutations('app', ['_setUserInfo']),
     ...mapActions('app', ['_getUserInfo']),
 
     update() {
@@ -207,7 +206,6 @@ export default {
         uni.hideLoading();
 
         this.$refs.signOutDialog.close();
-        this._setUserInfo({});
 
         uni.showToast({
           title: '退出成功',
