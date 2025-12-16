@@ -40,7 +40,7 @@
         </view>
       </view>
 
-      <view class="vip-icon" @click="!isVip && $toRouter('/pages/vip/vip')">
+      <view class="vip-icon" @click="!isVip && goVip()">
         <image
           mode="widthFix"
           :src="
@@ -248,6 +248,15 @@ export default {
             }
           }
         });
+    },
+
+    goVip() {
+      if (!this.isLogin) {
+        this.$toRouter('/packageLogin/pages/login/login');
+        return;
+      }
+
+      this.$toRouter('/pages/vip/vip');
     },
 
     previewDataPage(url) {
