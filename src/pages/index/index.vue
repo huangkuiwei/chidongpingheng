@@ -85,8 +85,10 @@
             <image mode="widthFix" src="https://hnenjoy.oss-cn-shanghai.aliyuncs.com/food-diary-app/home/doctor2.png" />
             <image
               mode="widthFix"
-              src="https://hnenjoy.oss-cn-shanghai.aliyuncs.com/food-diary-app/home/tip-btn2.png"
+              src="https://hnenjoy.oss-cn-shanghai.aliyuncs.com/chidongpingheng/index/tip-btn2.png"
             />
+
+            <text class="tip">唤醒你的专属吃动平衡吧</text>
           </view>
 
           <view class="current">当前</view>
@@ -550,6 +552,16 @@ export default {
               width: 384rpx;
             }
           }
+        }
+
+        .tip {
+          text-align: center;
+          font-weight: 500;
+          font-size: 30rpx;
+          color: #fafcff;
+          position: absolute;
+          bottom: 36rpx;
+          letter-spacing: 2rpx;
         }
 
         .current,
